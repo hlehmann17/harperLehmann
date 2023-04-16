@@ -69,6 +69,7 @@ library(gt)
 
 # Abstract
 <!-- Include a brief description of the background, research question and objectives, study design, and data sources. -->
+
 <TEXT>
 
 # Amendments and updates
@@ -484,8 +485,6 @@ The inferential data analysis plan is described conceptually, and the context or
 
 <TEXT>
 
-Table 10. Primary, secondary, and subgroup analysis specification
-
 <!--
 The table below requests the following operational details for each sub-table that reflect the primary and secondary analyses:
 
@@ -564,8 +563,6 @@ This section includes structured prompts to state the reasons for selecting the 
 **Data source provenance/curation:** 
 <Text>
 
-Table 12. Metadata about data sources and software
-
 <!--
 The table below requests the following meta-data details:
 
@@ -631,7 +628,7 @@ Discuss potential limitations of the study design, and analytic methods, includi
 
 <TEXT>
 
-9. Protection of human subjects
+# Protection of human subjects
 <!--
 If relevant, discuss privacy safeguards, ethics or human subjects review board processes taken to comply with requirements for minimizing the risks and ensuring the privacy of patients whose data is used for non-interventional studies involving secondary use of real-world data. If the study is considered exempt by the relevant ethics board this should be stated with the reason it is considered exempt.
 -->
@@ -650,7 +647,7 @@ https://www.ema.europa.eu/en/human-regulatory/post-authorisation/pharmacovigilan
 
 <TEXT>
 
-11.  References
+# References
 <!--
 Provide a numbered list of references for any works cited in the protocol. Sufficient information must be provided to retrieve the cited work.
 
@@ -659,7 +656,7 @@ Provide a numbered list of references for any works cited in the protocol. Suffi
 
 
 
-12.  Appendices
+# Appendices
 <!--
 Provide a list of appendices that are provided as separate documents. The expectation is that machine readable appendices that list out the actual clinical code algorithms used to define study parameters outlined in the protocol tables will be provided. Other appendices may be included to provide more detail on other things such as decisions made when converting source data to a common data model or details on data linkage and performance.
 
@@ -668,10 +665,9 @@ Provide a list of appendices that are provided as separate documents. The expect
 
 # Change log
 
-Detailed change log based on previous commits
+Detailed change log based on previous commits.
 
 ```{bash}
-#| eval: false
 git log --format='%aD
 Changes made by: %aE 
 Commit hash:  %h

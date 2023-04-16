@@ -95,6 +95,34 @@
     "href": "protocol/protocol.html#data-analysis",
     "title": "Study protocol",
     "section": "7.5 Data analysis",
-    "text": "7.5 Data analysis\n\n7.5.1 Context and rationale for analysis plan\n\n\nTable 10. Primary, secondary, and subgroup analysis specification\n\n\n\n7.5.1.1 A. Primary analysis\n\n\nTable 10: Primary, secondary, and subgroup analysis specification\n\n\n\n\n\n\n(a) Primary analysis \n  \n    \n    \n      Analysis element\n      Specification\n    \n  \n  \n    Hypothesis:\n<Text>\n    Exposure contrast:\n<Text>\n    Outcome:\n<Text>\n    Analytical software\n<Text>\n    Model(s):\n<Text>\n    Conofunding adjustment method\nName method and provide relevant details, e.g. bivariate, multivariable, propensity score matching (specify matching algorithm ratio and caliper), propensity score weighting (specify weight formula, trimming, truncation), propensity score stratification (specify strata definition), other\n    Missing data methods\nName method and provide relevant details, e.g. missing indicators, complete case, last value carried forward, multiple imputation (specify model/variables), other.\n    Subgroup Analyses\nList all subgroups\n  \n  \n  \n\n\n\n\n\n\n\n\n\n(b) Secondary analysis \n  \n    \n    \n      Analysis element\n      Specification\n    \n  \n  \n    Hypothesis:\n<Text>\n    Exposure contrast:\n<Text>\n    Outcome:\n<Text>\n    Analytical software\n<Text>\n    Model(s):\n<Text>\n    Conofunding adjustment method\nName method and provide relevant details, e.g. bivariate, multivariable, propensity score matching (specify matching algorithm ratio and caliper), propensity score weighting (specify weight formula, trimming, truncation), propensity score stratification (specify strata definition), other\n    Missing data methods\nName method and provide relevant details, e.g. missing indicators, complete case, last value carried forward, multiple imputation (specify model/variables), other.\n    Subgroup Analyses\nList all subgroups"
+    "text": "7.5 Data analysis\n\n7.5.1 Context and rationale for analysis plan\n\n\n\n\n\n7.5.1.1 A. Primary analysis\n\n\nTable 10: Primary, secondary, and subgroup analysis specification\n\n\n\n\n\n\n(a) Primary analysis \n  \n    \n    \n      Analysis element\n      Specification\n    \n  \n  \n    Hypothesis:\n<Text>\n    Exposure contrast:\n<Text>\n    Outcome:\n<Text>\n    Analytical software\n<Text>\n    Model(s):\n<Text>\n    Conofunding adjustment method\nName method and provide relevant details, e.g. bivariate, multivariable, propensity score matching (specify matching algorithm ratio and caliper), propensity score weighting (specify weight formula, trimming, truncation), propensity score stratification (specify strata definition), other\n    Missing data methods\nName method and provide relevant details, e.g. missing indicators, complete case, last value carried forward, multiple imputation (specify model/variables), other.\n    Subgroup Analyses\nList all subgroups\n  \n  \n  \n\n\n\n\n\n\n\n\n\n(b) Secondary analysis \n  \n    \n    \n      Analysis element\n      Specification\n    \n  \n  \n    Hypothesis:\n<Text>\n    Exposure contrast:\n<Text>\n    Outcome:\n<Text>\n    Analytical software\n<Text>\n    Model(s):\n<Text>\n    Conofunding adjustment method\nName method and provide relevant details, e.g. bivariate, multivariable, propensity score matching (specify matching algorithm ratio and caliper), propensity score weighting (specify weight formula, trimming, truncation), propensity score stratification (specify strata definition), other\n    Missing data methods\nName method and provide relevant details, e.g. missing indicators, complete case, last value carried forward, multiple imputation (specify model/variables), other.\n    Subgroup Analyses\nList all subgroups\n  \n  \n  \n\n\n\n\n\n\n\n\n\n\n\n\n\nTable 11:  Sensitivity analyses – rationale, strengths and limitations \n  \n    \n    \n      Analysis\n      What is being varied?\n      Why (expected learning)?\n      Strengths of the sensitivity analysis compared to primary\n      Limitations of the sensitivity analysis compared to primary\n    \n  \n  \n    <Text>\n<Text>\n<Text>\n<Text>\n<Text>"
+  },
+  {
+    "objectID": "protocol/protocol.html#data-sources",
+    "href": "protocol/protocol.html#data-sources",
+    "title": "Study protocol",
+    "section": "7.6 Data sources",
+    "text": "7.6 Data sources\n\n\n7.6.1 Context and rationale for data sources\nReason for selection: \nStrengths of data source(s): \nLimitations of data source(s): \nData source provenance/curation: \n\n\n\n\n\n\n\n\nTable 12:  Metadata about data sources and software \n  \n    \n    \n      Data element\n      Data 1\n      Data 2\n      Data 3\n    \n  \n  \n    Data Sources:\n<Text>\n<Text>\n<Text>\n    Study Period:\n<Text>\n<Text>\n<Text>\n    Eligibile Cohort Entry Period:\n<Text>\n<Text>\n<Text>\n    Data version (or date of last update):\n<Text>\n<Text>\n<Text>\n    Data sampling/extraction criteria:\n<Text>\n<Text>\n<Text>\n    Type(s) of data:\n<Text>\n<Text>\n<Text>\n    Data linkage\n<Text>\n<Text>\n<Text>\n    Conversion to CDM:\n<Text>\n<Text>\n<Text>\n    Software for data management:\n<Text>\n<Text>\n<Text>"
+  },
+  {
+    "objectID": "protocol/protocol.html#data-management",
+    "href": "protocol/protocol.html#data-management",
+    "title": "Study protocol",
+    "section": "7.7 Data management",
+    "text": "7.7 Data management"
+  },
+  {
+    "objectID": "protocol/protocol.html#quality-control",
+    "href": "protocol/protocol.html#quality-control",
+    "title": "Study protocol",
+    "section": "7.8 Quality control",
+    "text": "7.8 Quality control"
+  },
+  {
+    "objectID": "protocol/protocol.html#study-size-and-feasibility",
+    "href": "protocol/protocol.html#study-size-and-feasibility",
+    "title": "Study protocol",
+    "section": "7.9 Study size and feasibility",
+    "text": "7.9 Study size and feasibility"
   }
 ]

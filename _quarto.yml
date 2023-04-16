@@ -1,0 +1,69 @@
+project:
+  type: website
+  output-dir: public
+  render:
+    - index.qmd
+    # protocol
+    - protocol/protocol.qmd
+
+website:
+  title: "HARPER"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: protocol/protocol.qmd
+        text: Protocol
+
+page-footer:
+    left: |
+      HARPER protocol template for <study name>
+
+  
+format:
+
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    citations-hover: true
+    code-fold: true
+    code-summary: "Show the code"
+    page-layout: full
+    link-external-icon: true
+    link-external-newwindow: true
+    number-sections: true
+    colorlinks: true
+    engine: knitr
+    echo: false
+    fig-cap-location: top
+    tbl-cap-location: top
+    crossref:
+      fig-title: Figure
+      tbl-title: Table
+      title-delim: ":"
+      fig-prefix: Figure
+      tbl-prefix: Table
+      ref-hyperlink: true
+      
+  pdf:
+    #documentclass: report
+    papersize: letter
+    toc: true
+    colorlinks: true
+    engine: knitr
+    echo: false
+    fig-cap-location: top
+    tbl-cap-location: top
+    crossref:
+      fig-title: Figure
+      tbl-title: Table
+      title-delim: ":"
+      fig-prefix: Figure
+      tbl-prefix: Table
+      ref-hyperlink: true
+
+
+
+
+

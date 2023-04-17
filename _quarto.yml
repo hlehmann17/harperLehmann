@@ -32,7 +32,6 @@ format:
     page-layout: full
     link-external-icon: true
     link-external-newwindow: true
-    number-sections: true
     colorlinks: true
     engine: knitr
     echo: false
@@ -41,7 +40,7 @@ format:
     crossref:
       fig-title: Figure
       tbl-title: Table
-      title-delim: ":"
+      title-delim: "."
       fig-prefix: Figure
       tbl-prefix: Table
       ref-hyperlink: true
@@ -59,12 +58,7 @@ format:
     crossref:
       fig-title: Figure
       tbl-title: Table
-      title-delim: ":"
-      fig-prefix: Table
+      title-delim: "."
+      fig-prefix: Figure
       tbl-prefix: Table
       ref-hyperlink: true
-
-
-
-
-

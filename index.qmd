@@ -1,0 +1,24 @@
+---
+title: "<Study Name>"
+subtitle: "Based on the HARPER template"
+date: "`r Sys.Date()`"
+---
+
+# HARPER
+
+A GitLab/quarto-based template for the HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force (HARPER) protocol
+
+![](images/harper_logo.png)
+
+## About
+
+**Welcome to the quarto HARPER template!**
+
+You can fork and use this template to quick-start your projects.
+
+# References
+
+>Wang SV, Pottegård A, Crown W, Arlett P, Ashcroft DM, Benchimol EI, Berger ML, Crane G, Goettsch W, Hua W, Kabadi S, Kern DM, Kurz X, Langan S, Nonaka T, Orsini L, Perez-Gutthann S, Pinheiro S, Pratt N, Schneeweiss S, Toussi M, Williams RJ. HARmonized Protocol Template to Enhance Reproducibility of hypothesis evaluating real-world evidence studies on treatment effects: A good practices report of a joint ISPE/ISPOR task force. Pharmacoepidemiol Drug Saf. 2023 Jan;32(1):44-55. doi: 10.1002/pds.5507. Epub 2022 Oct 10. PMID: 36215113; PMCID: PMC9771861.
+
+For more information, please visit:
+<https://osf.io/6qxpf/>

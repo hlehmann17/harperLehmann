@@ -15,6 +15,7 @@ author:
         city: Boston
         state: MA
         postal-code: 02120
+number-sections: true
 bibliography: references.bib
 ---
 

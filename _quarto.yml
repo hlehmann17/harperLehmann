@@ -49,6 +49,7 @@ format:
   pdf:
     #documentclass: report
     papersize: letter
+    classoption: landscape
     toc: true
     colorlinks: true
     engine: knitr

@@ -15,6 +15,7 @@ author:
         city: Boston
         state: MA
         postal-code: 02120
+bibliography: references.bib
 ---
 
 ```{r}
@@ -23,59 +24,58 @@ author:
 library(tidyverse)
 library(here)
 library(gt)
-library(toolbox)
-
-tbl_file_path <- here("protocol")
 ```
 
 {{< pagebreak >}}
 
 # Title page
 
+This protocol is based on the *HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force* (**HARPER**) protocol by [@Wang2023].
+
 ## Title {.unnumbered .unlisted}
+
 <TEXT>
 
 ## Research question and objectives {.unnumbered .unlisted}
+
 <TEXT>
 
 ## Protocol version {.unnumbered .unlisted}
+
 <TEXT>
 
 ## Contributors {.unnumbered .unlisted}
+
 <TEXT>
 
-**Primary investigator contact information:**
-<TEXT>
+**Primary investigator contact information:** <TEXT>
 
-**Contributor names:**
-<TEXT>
+**Contributor names:** <TEXT>
 
 ## Study registration {.unnumbered .unlisted}
 
-**Site:**
-<TEXT>
+**Site:** <TEXT>
 
-**Identifier:**
-<TEXT>
+**Identifier:** <TEXT>
 
 ## Sponsor {.unnumbered .unlisted}
 
-**Organization:**
-<TEXT>
+**Organization:** <TEXT>
 
-**Contact:**
-<TEXT>
+**Contact:** <TEXT>
 
 ## Conflict of interest {.unnumbered .unlisted}
 
 {{< pagebreak >}}
 
 # Abstract
+
 <!-- Include a brief description of the background, research question and objectives, study design, and data sources. -->
 
 <TEXT>
 
 # Amendments and updates
+
 <!-- 
 
 For a table template to populate, please see protocol/1_tbl_amendments.csv
@@ -93,8 +93,6 @@ read_csv(
   show_col_types = FALSE
   ) %>% 
   gt()
-
-format_gt(tbl_gt = tbl_amendments, img_file_path = tbl_file_path)
 ```
 
 # Milestones
@@ -113,28 +111,22 @@ Date: Anticipated date of completion
 #| label: tbl-milestones
 #| tbl-cap: "Milestones"
 #| message: false
-tbl_milestones <- read_csv(
+read_csv(
   file = here("protocol", "1_tbl_milestones.csv"),
   show_col_types = FALSE
   ) %>% 
   gt()
-
-format_gt(tbl_gt = tbl_milestones, img_file_path = tbl_file_path, zoom = 1)
 ```
 
 # Rationale and background
 
-**What is known about the condition:**
-<TEXT>
+**What is known about the condition:** <TEXT>
 
-**What is known about the exposure of interest:**
-<TEXT>
+**What is known about the exposure of interest:** <TEXT>
 
-**Gaps in knowledge:**
-<TEXT>
+**Gaps in knowledge:** <TEXT>
 
-**What is the expected contribution of this study?**
-<TEXT>
+**What is the expected contribution of this study?** <TEXT>
 
 The purpose of this protocol is to describe the emulation of trial INSERT TRIAL NAME. The primary trial estimate targeted for emulation is INSERT. Market availability of EXPOSURE began DATE.
 
@@ -154,20 +146,17 @@ Duplicate table sections A and B as necessary for co-primary objectives or multi
 #|   - "A.	Primary research question and objective"
 #|   - "B.	Secondary research question and objective"
 #| layout-ncol: 1
-tbl_objectives1 <- read_csv(
+read_csv(
   file = here("protocol", "2a_tbl_primary_objective.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
 
-tbl_objectives2 <- read_csv(
+read_csv(
   file = here("protocol", "2b_tbl_secondary_objective.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
-
-format_gt(tbl_gt = tbl_objectives1, img_file_path = tbl_file_path, zoom = 1)
-format_gt(tbl_gt = tbl_objectives2, img_file_path = tbl_file_path, zoom = 1)
 ```
 
 # Research methods
@@ -232,13 +221,11 @@ TEXT -->
 #| label: tbl-entry
 #| tbl-cap: "Operational Definition of Time 0 (index date) and other primary time anchors."
 
-tbl_entry <- read_csv(
+read_csv(
   file = here("protocol", "3_tbl_entry.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
-
-format_gt(tbl_gt = tbl_entry, img_file_path = tbl_file_path)
 ```
 
 ### Context and rationale for study inclusion criteria
@@ -270,19 +257,15 @@ Assessment window: Use bracketed numbers representing time intervals anchored on
 #| label: tbl-inclusion
 #| tbl-cap: "Operational Definitions of Inclusion Criteria"
 
-tbl_inclusion <- read_csv(
+read_csv(
   file = here("protocol", "4_tbl_inclusion.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
-
-format_gt(tbl_gt = tbl_inclusion, img_file_path = tbl_file_path)
 ```
 
 ### Context and rationale for study exclusion criteria
-
 <!--
-
 The study exclusion criteria are described conceptually, and the context or rationale for applying these criteria are described in this section.
 
 The table below requests the following operational details:
@@ -315,13 +298,11 @@ Source of algorithm: Specify the source of algorithms to define the exclusion cr
 #| label: tbl-exclusion
 #| tbl-cap: "Operational Definitions of Exclusion Criteria"
 
-tbl_exclusion <- read_csv(
+read_csv(
   file = here("protocol", "5_tbl_exclusion.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
-
-format_gt(tbl_gt = tbl_exclusion, img_file_path = tbl_file_path)
 ```
 
 ## Variables
@@ -336,8 +317,7 @@ The study exposure (and comparator) are described conceptually, and the context 
 
 <TEXT>
 
-**Algorithm to define duration of exposure effect:**
-<!--
+**Algorithm to define duration of exposure effect:** <!--
 If relevant, describe how duration of exposure will be defined operationally. Consider stockpiling algorithms, allowable gaps, and hypothesized duration of biological effect beyond the last available dose.
 -->
 
@@ -378,18 +358,16 @@ Source of algorithm: Specify the source of algorithms to define the exposure
 #| label: tbl-exposure
 #| tbl-cap: "Operational Definitions of Exposure"
 
-tbl_exposure <- read_csv(
+read_csv(
   file = here("protocol", "6_tbl_exposure.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
   tab_options(
-    table.width = "50%",
-    table.font.size = 10
+    table.width = "75%",
+    table.font.size = 15,
+    quarto.use_bootstrap = TRUE
     )
-
-tbl_exposure
-#format_gt(tbl_gt = tbl_exposure, img_file_path = tbl_file_path)
 ```
 
 ### Context and rationale for outcome(s) of interest
@@ -431,15 +409,16 @@ Source of algorithm: Specify the source of algorithms to define the outcome.
 #| label: tbl-outcome
 #| tbl-cap: "Operational Definitions of Outcome"
 
-tbl_outcome <- read_csv(
+read_csv(
   file = here("protocol", "7_tbl_outcome.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
-
-format_gt(tbl_gt = tbl_outcome, img_file_path = tbl_file_path)
+  gt() %>% 
+  tab_options(
+    table.width = "75%",
+    table.font.size = 15
+    )
 ```
-
 
 ### Context and rationale for follow up
 <!--
@@ -447,7 +426,6 @@ The study follow up is described conceptually, and the context or rationale for 
 -->
 
 <TEXT>
-
 <!--
 The table below requests the following operational details:
 
@@ -455,17 +433,16 @@ Follow up start: Specify when follow up begins relative to time 0 (e.g. day 1). 
 
 Follow up end: Indicate 'Yes' or 'No' for each of the options. Specify additional details as relevant.
 -->
+
 ```{r}
 #| label: tbl-follow_up
 #| tbl-cap: "Operational Definitions of Follow up"
 
-tbl_fu <- read_csv(
+read_csv(
   file = here("protocol", "8_tbl_follow_up.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
-
-format_gt(tbl_gt = tbl_fu, img_file_path = tbl_file_path, zoom = 1)
 ```
 
 ### Context and rationale for covariates (confounding variables and effect modifiers, e.g. risk factors, comorbidities, comedications)
@@ -497,13 +474,15 @@ Measurement characteristics/validation:If there are measurement characteristics 
 #| label: tbl-covariates
 #| tbl-cap: "Operational Definitions of Covariates"
 
-tbl_covariates <- read_csv(
+read_csv(
   file = here("protocol", "9_tbl_covariates.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
-
-format_gt(tbl_gt = tbl_covariates, img_file_path = tbl_file_path) 
+  gt() %>% 
+  tab_options(
+    table.width = "75%",
+    table.font.size = 15
+    )
 ```
 
 ## Data analysis
@@ -544,39 +523,32 @@ Subgroup analysis: List subgroup analyses that will be conducted based on the pr
 #|   - "A.	Primary analysis"
 #|   - "B.	Secondary analysis"
 #| layout-ncol: 1
-tbl_primary_analysis <- read_csv(
+read_csv(
   file = here("protocol", "10a_tbl_primary_analysis.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
 
-tbl_sec_analysis <- read_csv(
+read_csv(
   file = here("protocol", "10b_tbl_secondary_analysis.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
-
-format_gt(tbl_gt = tbl_primary_analysis, img_file_path = tbl_file_path) 
-format_gt(tbl_gt = tbl_sec_analysis, img_file_path = tbl_file_path) 
 ```
-
 
 <!--
 The table below is used to detail the sensitivity analyses, the rationale for conducting them (in other words, stating what the investigator intends to learn from doing the sensitivity analysis), and any strengths or limitations of the sensitivity analysis relative to the primary analysis.
 -->
 
-
 ```{r}
 #| label: tbl-sensitivity
 #| tbl-cap: "Sensitivity analyses – rationale, strengths and limitations"
 
-tbl_sensitivity <- read_csv(
+read_csv(
   file = here("protocol", "11_tbl_sensitivity.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
-
-format_gt(tbl_gt = tbl_sensitivity, img_file_path = tbl_file_path) 
 ```
 
 ## Data sources
@@ -586,17 +558,13 @@ This section includes structured prompts to state the reasons for selecting the 
 
 ### Context and rationale for data sources
 
-**Reason for selection:** 
-<Text>
+**Reason for selection:** <Text>
 
-**Strengths of data source(s):** 
-<Text>
+**Strengths of data source(s):** <Text>
 
-**Limitations of data source(s):** 
-<Text>
+**Limitations of data source(s):** <Text>
 
-**Data source provenance/curation:** 
-<Text>
+**Data source provenance/curation:** <Text>
 
 <!--
 The table below requests the following meta-data details:
@@ -620,14 +588,11 @@ Software for data management: Name software that is used to manage or maintain t
 #| label: tbl-data
 #| tbl-cap: "Metadata about data sources and software"
 #| out-width: 50%
-tbl_data <- read_csv(
+read_csv(
   file = here("protocol", "12_tbl_data.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
-
-format_gt(tbl_gt = tbl_data, img_file_path = tbl_file_path, dpi = 100) 
-```
 ```
 
 ## Data management
@@ -691,8 +656,6 @@ Provide a numbered list of references for any works cited in the protocol. Suffi
 
 <Numbered list>
 -->
-
-
 
 # Appendices
 <!--

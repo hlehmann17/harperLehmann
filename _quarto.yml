@@ -59,7 +59,7 @@ format:
       fig-title: Figure
       tbl-title: Table
       title-delim: ":"
-      fig-prefix: Figure
+      fig-prefix: Table
       tbl-prefix: Table
       ref-hyperlink: true
 

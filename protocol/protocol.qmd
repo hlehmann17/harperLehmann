@@ -23,6 +23,9 @@ author:
 library(tidyverse)
 library(here)
 library(gt)
+library(toolbox)
+
+tbl_file_path <- here("protocol")
 ```
 
 {{< pagebreak >}}
@@ -84,11 +87,14 @@ Indicate amendments and updates to the study protocol in a table as indicated be
 #| label: amendments
 #| tbl-cap: "Amendments and updates"
 #| message: false
-read_csv(
+
+tbl_amendments <- read_csv(
   file = here("protocol", "0_tbl_amendments.csv"),
   show_col_types = FALSE
-  ) %>%
+  ) %>% 
   gt()
+
+format_gt(tbl_gt = tbl_amendments, img_file_path = tbl_file_path)
 ```
 
 # Milestones
@@ -107,11 +113,13 @@ Date: Anticipated date of completion
 #| label: tbl-milestones
 #| tbl-cap: "Milestones"
 #| message: false
-read_csv(
+tbl_milestones <- read_csv(
   file = here("protocol", "1_tbl_milestones.csv"),
   show_col_types = FALSE
   ) %>% 
   gt()
+
+format_gt(tbl_gt = tbl_milestones, img_file_path = tbl_file_path)
 ```
 
 # Rationale and background
@@ -146,17 +154,20 @@ Duplicate table sections A and B as necessary for co-primary objectives or multi
 #|   - "A.	Primary research question and objective"
 #|   - "B.	Secondary research question and objective"
 #| layout-ncol: 1
-read_csv(
+tbl_objectives1 <- read_csv(
   file = here("protocol", "2a_tbl_primary_objective.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
 
-read_csv(
+tbl_objectives2 <- read_csv(
   file = here("protocol", "2b_tbl_secondary_objective.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_objectives1, img_file_path = tbl_file_path)
+format_gt(tbl_gt = tbl_objectives2, img_file_path = tbl_file_path)
 ```
 
 # Research methods
@@ -221,11 +232,13 @@ TEXT -->
 #| label: tbl-entry
 #| tbl-cap: "Operational Definition of Time 0 (index date) and other primary time anchors."
 
-read_csv(
+tbl_entry <- read_csv(
   file = here("protocol", "3_tbl_entry.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_entry, img_file_path = tbl_file_path)
 ```
 
 ### Context and rationale for study inclusion criteria
@@ -257,11 +270,13 @@ Assessment window: Use bracketed numbers representing time intervals anchored on
 #| label: tbl-inclusion
 #| tbl-cap: "Operational Definitions of Inclusion Criteria"
 
-read_csv(
+tbl_inclusion <- read_csv(
   file = here("protocol", "4_tbl_inclusion.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_inclusion, img_file_path = tbl_file_path)
 ```
 
 ### Context and rationale for study exclusion criteria
@@ -300,11 +315,13 @@ Source of algorithm: Specify the source of algorithms to define the exclusion cr
 #| label: tbl-exclusion
 #| tbl-cap: "Operational Definitions of Exclusion Criteria"
 
-read_csv(
+tbl_exclusion <- read_csv(
   file = here("protocol", "5_tbl_exclusion.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_exclusion, img_file_path = tbl_file_path)
 ```
 
 ## Variables
@@ -361,11 +378,13 @@ Source of algorithm: Specify the source of algorithms to define the exposure
 #| label: tbl-exposure
 #| tbl-cap: "Operational Definitions of Exposure"
 
-read_csv(
+tbl_exposure <- read_csv(
   file = here("protocol", "6_tbl_exposure.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_exposure, img_file_path = tbl_file_path)
 ```
 
 ### Context and rationale for outcome(s) of interest
@@ -407,11 +426,13 @@ Source of algorithm: Specify the source of algorithms to define the outcome.
 #| label: tbl-outcome
 #| tbl-cap: "Operational Definitions of Outcome"
 
-read_csv(
+tbl_outcome <- read_csv(
   file = here("protocol", "7_tbl_outcome.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_outcome, img_file_path = tbl_file_path)
 ```
 
 
@@ -433,11 +454,13 @@ Follow up end: Indicate 'Yes' or 'No' for each of the options. Specify additiona
 #| label: tbl-follow_up
 #| tbl-cap: "Operational Definitions of Follow up"
 
-read_csv(
+tbl_fu <- read_csv(
   file = here("protocol", "8_tbl_follow_up.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_fu, img_file_path = tbl_file_path)
 ```
 
 ### Context and rationale for covariates (confounding variables and effect modifiers, e.g. risk factors, comorbidities, comedications)
@@ -469,11 +492,13 @@ Measurement characteristics/validation:If there are measurement characteristics 
 #| label: tbl-covariates
 #| tbl-cap: "Operational Definitions of Covariates"
 
-read_csv(
+tbl_covariates <- read_csv(
   file = here("protocol", "9_tbl_covariates.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_covariates, img_file_path = tbl_file_path) 
 ```
 
 ## Data analysis
@@ -514,17 +539,20 @@ Subgroup analysis: List subgroup analyses that will be conducted based on the pr
 #|   - "A.	Primary analysis"
 #|   - "B.	Secondary analysis"
 #| layout-ncol: 1
-read_csv(
+tbl_primary_analysis <- read_csv(
   file = here("protocol", "10a_tbl_primary_analysis.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
 
-read_csv(
+tbl_sec_analysis <- read_csv(
   file = here("protocol", "10b_tbl_secondary_analysis.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_primary_analysis, img_file_path = tbl_file_path) 
+format_gt(tbl_gt = tbl_sec_analysis, img_file_path = tbl_file_path) 
 ```
 
 
@@ -537,11 +565,13 @@ The table below is used to detail the sensitivity analyses, the rationale for co
 #| label: tbl-sensitivity
 #| tbl-cap: "Sensitivity analyses – rationale, strengths and limitations"
 
-read_csv(
+tbl_sensitivity <- read_csv(
   file = here("protocol", "11_tbl_sensitivity.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_sensitivity, img_file_path = tbl_file_path) 
 ```
 
 ## Data sources
@@ -585,11 +615,13 @@ Software for data management: Name software that is used to manage or maintain t
 #| label: tbl-data
 #| tbl-cap: "Metadata about data sources and software"
 
-read_csv(
+tbl_data <- read_csv(
   file = here("protocol", "12_tbl_data.csv"),
   show_col_types = FALSE
   ) %>%
   gt()
+
+format_gt(tbl_gt = tbl_data, img_file_path = tbl_file_path) 
 ```
 
 ## Data management

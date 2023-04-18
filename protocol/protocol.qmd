@@ -17,6 +17,7 @@ author:
         postal-code: 02120
 number-sections: true
 bibliography: references.bib
+csl: pharmacoepidemiology-and-drug-safety.csl
 ---
 
 ```{r}
@@ -25,13 +26,16 @@ bibliography: references.bib
 library(tidyverse)
 library(here)
 library(gt)
+
+# global gt table options
+gt_style <- function(x) gt::tab_options(x, data_row.padding = gt::px(3))
 ```
 
 {{< pagebreak >}}
 
 # Title page
 
-This protocol is based on the *HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force* (**HARPER**) protocol by [@Wang2023].
+This protocol is based on the *HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force* (**HARPER**) protocol by Wang SV et al..[@Wang2023]
 
 ## Title {.unnumbered .unlisted}
 
@@ -93,7 +97,8 @@ read_csv(
   file = here("protocol", "0_tbl_amendments.csv"),
   show_col_types = FALSE
   ) %>% 
-  gt()
+  gt() %>% 
+  gt_style()
 ```
 
 # Milestones
@@ -116,7 +121,8 @@ read_csv(
   file = here("protocol", "1_tbl_milestones.csv"),
   show_col_types = FALSE
   ) %>% 
-  gt()
+  gt() %>% 
+  gt_style()
 ```
 
 # Rationale and background
@@ -151,13 +157,15 @@ read_csv(
   file = here("protocol", "2a_tbl_primary_objective.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
+  gt() %>% 
+  gt_style()
 
 read_csv(
   file = here("protocol", "2b_tbl_secondary_objective.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
+  gt() %>% 
+  gt_style()
 ```
 
 # Research methods
@@ -226,7 +234,8 @@ read_csv(
   file = here("protocol", "3_tbl_entry.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
+  gt() %>% 
+  gt_style()
 ```
 
 ### Context and rationale for study inclusion criteria
@@ -262,7 +271,8 @@ read_csv(
   file = here("protocol", "4_tbl_inclusion.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
+  gt() %>% 
+  gt_style()
 ```
 
 ### Context and rationale for study exclusion criteria
@@ -303,7 +313,8 @@ read_csv(
   file = here("protocol", "5_tbl_exclusion.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
+  gt() %>% 
+  gt_style()
 ```
 
 ## Variables
@@ -368,7 +379,8 @@ read_csv(
     table.width = "75%",
     table.font.size = 15,
     quarto.use_bootstrap = TRUE
-    )
+    ) %>% 
+  gt_style()
 ```
 
 ### Context and rationale for outcome(s) of interest
@@ -418,7 +430,8 @@ read_csv(
   tab_options(
     table.width = "75%",
     table.font.size = 15
-    )
+    ) %>% 
+  gt_style()
 ```
 
 ### Context and rationale for follow up
@@ -443,7 +456,8 @@ read_csv(
   file = here("protocol", "8_tbl_follow_up.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
+  gt() %>% 
+  gt_style()
 ```
 
 ### Context and rationale for covariates (confounding variables and effect modifiers, e.g. risk factors, comorbidities, comedications)
@@ -483,7 +497,8 @@ read_csv(
   tab_options(
     table.width = "75%",
     table.font.size = 15
-    )
+    ) %>% 
+  gt_style()
 ```
 
 ## Data analysis
@@ -528,13 +543,15 @@ read_csv(
   file = here("protocol", "10a_tbl_primary_analysis.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
+  gt() %>% 
+  gt_style()
 
 read_csv(
   file = here("protocol", "10b_tbl_secondary_analysis.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
+  gt() %>% 
+  gt_style()
 ```
 
 <!--
@@ -549,7 +566,8 @@ read_csv(
   file = here("protocol", "11_tbl_sensitivity.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
+  gt() %>% 
+  gt_style()
 ```
 
 ## Data sources
@@ -593,7 +611,8 @@ read_csv(
   file = here("protocol", "12_tbl_data.csv"),
   show_col_types = FALSE
   ) %>%
-  gt()
+  gt() %>% 
+  gt_style()
 ```
 
 ## Data management
@@ -655,8 +674,13 @@ https://www.ema.europa.eu/en/human-regulatory/post-authorisation/pharmacovigilan
 <!--
 Provide a numbered list of references for any works cited in the protocol. Sufficient information must be provided to retrieve the cited work.
 
+BibTex-created citations will be automaticlly referenced here, so no further action is needed.
+
 <Numbered list>
 -->
+
+::: {#refs}
+:::
 
 # Appendices
 <!--

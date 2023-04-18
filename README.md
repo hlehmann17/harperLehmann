@@ -14,7 +14,7 @@ You can fork and use this template to quick-start your projects.
 
 This template is useful for real-world evidence (RWE) studies performed using the R or Python programming language. By forking the template, users can kickstart their analysis by having a Quarto-based HARPER document template (and corresponding table shells) along with pre-configured `.yml` files for continuous deployment of a project-specfic website using GitLab.
 
-Step 1: **Fork** the repository and enter your project details (e.g. repository name, etc.)
+Step 1: Fork the repository and enter your project details (e.g. repository name, etc.)
 
 Step 2: Enter/specify you project details in:
 

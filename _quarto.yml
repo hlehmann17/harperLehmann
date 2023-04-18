@@ -40,7 +40,7 @@ format:
     crossref:
       fig-title: Figure
       tbl-title: Table
-      title-delim: "."
+      title-delim: ":"
       fig-prefix: Figure
       tbl-prefix: Table
       ref-hyperlink: true
@@ -58,7 +58,7 @@ format:
     crossref:
       fig-title: Figure
       tbl-title: Table
-      title-delim: "."
+      title-delim: ":"
       fig-prefix: Figure
       tbl-prefix: Table
       ref-hyperlink: true

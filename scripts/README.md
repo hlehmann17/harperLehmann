@@ -1,0 +1,1 @@
+scripts: Sub-directory for R/Python analysis scripts. It is recommended to have a clear labeling such as: 1_data_query.qmd, 2_descriptives.qmd, 3_main_analysis, 4_senstivity_analysis, etc.

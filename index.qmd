@@ -1,20 +1,20 @@
 ---
-title: "<Study Name>"
+title: "STUDY TITLE"
 subtitle: "Based on the HARPER template"
 date: "`r Sys.Date()`"
 ---
 
 # HARPER
 
-A GitLab/quarto-based template for the HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force (HARPER) protocol
+This is a GitLab/quarto-based template for the HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force (HARPER) protocol
 
-![](images/harper_logo.png)
+![](protocol/images/harper_logo.png)
 
 ## About
 
 **Welcome to the quarto HARPER template!**
 
-You can fork and use this template to quick-start your projects.
+You can fork and use this template to quick-start your real-world evidence (RWE) projects. For instructions, please see the `README.md` file of this repository.
 
 # References
 

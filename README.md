@@ -16,17 +16,19 @@ This template is useful for real-world evidence (RWE) studies performed using th
 
 Step 1: Fork the repository and enter your project details (e.g. repository name, etc.)
 
-Step 2: Enter/specify you project details in:
+Step 2: Remove the fork relationship under `Settings > General > Advanced >  Remove fork relationship`
+
+Step 3: Execute `renv::restore()` to install all required dependencies (R packages) in the project-specific renv R package library.
+
+Step 4: Enter/specify you project details in:
 
 * README.md
 
 * _quarto.yml
 
-* .gitlab-ci.yml ([adjust the CI to your system](https://docs.gitlab.com/ee/user/project/pages/getting_started/pages_forked_sample_project.html))
+* .gitlab-ci.yml ([adjust the CI to your system if needed](https://docs.gitlab.com/ee/user/project/pages/getting_started/pages_forked_sample_project.html))
 
-Step 3: Execute `renv::restore()` to install all required dependencies (R packages) in the project-specific renv R package library.
-
-Step 4: Customize as much as needed and conduct great research!
+Step 5: Customize as much as needed and conduct great research!
 
 ## Repository details
 

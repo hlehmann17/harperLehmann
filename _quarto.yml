@@ -34,7 +34,6 @@ format:
     link-external-newwindow: true
     colorlinks: true
     engine: knitr
-    echo: false
     fig-cap-location: top
     tbl-cap-location: top
     crossref:
@@ -52,7 +51,6 @@ format:
     toc: true
     colorlinks: true
     engine: knitr
-    echo: false
     fig-cap-location: top
     tbl-cap-location: top
     crossref:

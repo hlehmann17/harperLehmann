@@ -36,7 +36,7 @@ gt_style <- function(x) gt::tab_options(x, data_row.padding = gt::px(3))
 
 # Title page
 
-This protocol is based on the *HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force* (**HARPER**) protocol by Wang SV et al..[@Wang2023]
+This protocol is based on the *HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force* (**HARPER**) protocol by Wang SV et al.[@Wang2022;@Wang2023]
 
 ## Title {.unnumbered .unlisted}
 
@@ -177,7 +177,7 @@ read_csv(
 
 **Rationale for study design choice:** <TEXT>
 
-## Study design diagram
+## Study design diagram[@Schneeweiss2019;@lund2021]
 <!--  
 
 Create a design diagram to describe time 0 and relevant study windows used in the study design. A recommended framework is outlined in Schneeweiss et al. Graphical Depiction of Longitudinal Study Designs in Health Care Databases. Ann Intern Med. 2019; 170:398–406. The diagram following this framework can be created using power point templates or other software program of choice (www.repeatinitiative.org/projects). It is intended to be read from top to bottom, reflecting the order of operations to create an analytic cohort from a source longitudinal healthcare database. Temporality of assessment windows are clearly shown relative to the study entry (“index”) date, which is considered time 0. Bracketed number ranges denote the inclusive time windows for washout, inclusion/exclusion, and covariate assessment windows as well as follow up. Whether or not time 0 is included in an assessment window can also be visually distinguished by whether it overlaps the vertical arrow representing the primary anchor.

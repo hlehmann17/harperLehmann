@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "STUDY TITLE",
     "section": "",
-    "text": "This is a GitLab/quarto-based template for the HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force (HARPER) protocol\n\n\n\nWelcome to the quarto HARPER template!\nYou can fork and use this template to quick-start your real-world evidence (RWE) projects. For instructions, please see the README.md file of this repository."
+    "text": "This is a GitLab/quarto-based template for real-world evidence (RWE) studies based on the HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force (HARPER) protocol.1–4\n\n\n\nWelcome to the quarto HARPER template!\nYou can fork and use this template to quick-start your real-world evidence (RWE) projects. For instructions, please see the README.md file of this repository.\nFor more information about the HARPER protocol, please visit: https://osf.io/6qxpf/"
   },
   {
     "objectID": "protocol/protocol.html#title",
@@ -117,5 +117,12 @@
     "title": "Study protocol",
     "section": "7.9 Study size and feasibility",
     "text": "7.9 Study size and feasibility"
+  },
+  {
+    "objectID": "protocol/protocol.html#study-design-diagramschneeweiss2019lund2021",
+    "href": "protocol/protocol.html#study-design-diagramschneeweiss2019lund2021",
+    "title": "Study protocol",
+    "section": "7.2 Study design diagram3,4",
+    "text": "7.2 Study design diagram3,4"
   }
 ]

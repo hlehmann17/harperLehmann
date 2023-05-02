@@ -16,7 +16,7 @@ This is a **GitLab/quarto-based template for real-world evidence (RWE) studies**
 
 **Welcome to the quarto HARPER template!**
 
-You can fork and use this template to quick-start your real-world evidence (RWE) projects. For instructions, please see the `README.md` file of this repository.
+You can fork and use this template to quick-start your real-world evidence (RWE) projects. For instructions, please see the [README.md](https://gitlab-scm.partners.org/janickweberpals/harper#harper) file of this repository.
 
 For more information about the HARPER protocol, please visit: <https://osf.io/6qxpf/>
 

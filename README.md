@@ -1,6 +1,4 @@
-# HARPER-based GitLab study repository
-
-## Version 0.0.1
+# HARPER-based GitLab study repository (*version 0.0.1*)
 
 This is a **GitLab/quarto-based template for real-world evidence (RWE) studies** based on the `HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force` (HARPER) protocol.
 
@@ -28,7 +26,7 @@ Step 4: Enter/specify you project details in:
 
 * _quarto.yml
 
-* .gitlab-ci.yml ([adjust the CI to your system if needed](https://docs.gitlab.com/ee/user/project/pages/getting_started/pages_forked_sample_project.html))
+* .gitlab-ci.yml ([adjust the CI to your system if needed](https://docs.gitlab.com/ee/user/project/pages/getting_started/pages_forked_sample_project.html)). If the yml file is configured correctly, the website should be automatically continuously deployed (find more information on GitLab Pages' default domain names and URLs [here](https://docs.gitlab.com/ee/user/project/pages/getting_started_part_one.html)).
 
 Step 5: Customize as much as needed and conduct great research!
 
@@ -73,4 +71,4 @@ For more information, please visit:
 
 # Version
 
-`HARPER-based quarato template for GitLab version 0.0.1`
+`HARPER-based quarto template for GitLab version 0.0.1`

@@ -70,3 +70,7 @@ Wang SV, Pottegård A, Crown W, Arlett P, Ashcroft DM, Benchimol EI, Berger ML, 
 
 For more information, please visit:
 <https://osf.io/6qxpf/>
+
+# Version
+
+`HARPER-based quarato template for GitLab version 0.0.1`

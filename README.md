@@ -1,6 +1,8 @@
-# HARPER
+# HARPER-based GitLab study repository
 
-This is a GitLab/quarto-based template for the HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force (HARPER) protocol
+## Version 0.0.1
+
+This is a **GitLab/quarto-based template for real-world evidence (RWE) studies** based on the `HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force` (HARPER) protocol.
 
 ![](protocol/images/harper_logo.png)
 
@@ -16,7 +18,7 @@ This template is useful for real-world evidence (RWE) studies performed using th
 
 Step 1: Fork the repository and enter your project details (e.g. repository name, etc.)
 
-Step 2: Remove the fork relationship under `Settings > General > Advanced >  Remove fork relationship`
+Step 2: Remove the fork relationship under `Settings > General > Advanced > Remove fork relationship`
 
 Step 3: Execute `renv::restore()` to install all required dependencies (R packages) in the project-specific renv R package library.
 
@@ -38,7 +40,7 @@ This template is conceptualized for a typical RWE study with the following sub-d
 
 * `index.qmd`: Landing page of quarto website. Could include similar information as `README.md`
 
-* `protocol`: HARPER quarto template (`protocol,qmd`) with empty table shells included in the protocol, template for study design figures and HARPER pdf template. It also contains a pre-configured `references.bib` BibTex file for citations/references one may want to include in the protocol.
+* `protocol`: HARPER quarto template (`protocol.qmd`) with empty table shells included in the protocol, template for study design figures and HARPER pdf template. It also contains a pre-configured `references.bib` BibTex file for citations/references one may want to include in the protocol.
 
 * `documentation`: Sub-directory for documentation materials, e.g. data dictionaries or IRB approval letters.
 
@@ -48,7 +50,7 @@ This template is conceptualized for a typical RWE study with the following sub-d
 
 * `results`: Sub-directory for collecting publication-ready tables, figures and other material relevant to communicate results.
 
-* `public`: output directory for all quarto scripts and resources published on the website. This is particularly useful to publish annotated and interactive outputs along with a peer-reviewed manuscript as a measure of enhanced transpareny and reproducibility and a way to augment and support study results. The name of the output directory can be customized in the `_quarto.yml` file according to specific system needs (for more details see the [quarto webiste](https://quarto.org/docs/projects/quarto-projects.html)).
+* `public`: output directory for all quarto scripts and resources published on the website. This is particularly useful to publish annotated and interactive outputs along with a peer-reviewed manuscript as a measure of enhanced transpareny and reproducibility and a way to augment and support study results. The name of the output directory can be customized in the `_quarto.yml` file according to specific system needs (for more details see the [quarto website](https://quarto.org/docs/projects/quarto-projects.html)).
 
 * `manuscript`: Sub-directory where manuscript and supplementary material can be drafted and stored.
 

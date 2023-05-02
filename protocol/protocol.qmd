@@ -690,6 +690,26 @@ Provide a list of appendices that are provided as separate documents. The expect
 < List of appendices >
 -->
 
+# Session info
+
+## Loaded packages
+
+```{r, class.source = 'fold-hide'}
+pander::pander(subset(data.frame(sessioninfo::package_info()), attached==TRUE, c(package, loadedversion)))
+```
+
+## Session info
+
+```{r, class.source = 'fold-hide'}
+pander::pander(sessionInfo())
+```
+
+## Repositories
+
+```{r, class.source = 'fold-hide'}
+pander::pander(options('repos'))
+```
+
 # Change log
 
 Detailed change log based on previous commits.

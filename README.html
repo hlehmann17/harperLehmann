@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="harper-based-gitlab-study-repository" class="level1">
+<h1>HARPER-based GitLab study repository</h1>
+<section id="version-0.0.1" class="level2">
+<h2 class="anchored" data-anchor-id="version-0.0.1">Version 0.0.1</h2>
+<p>This is a <strong>GitLab/quarto-based template for real-world evidence (RWE) studies</strong> based on the <code>HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force</code> (HARPER) protocol.<span class="citation" data-cites="Wang2022 Wang2023 Schneeweiss2019 lund2021">[@Wang2022; @Wang2023;@Schneeweiss2019;@lund2021]</span></p>
+<p><img src="protocol/images/harper_logo.png" class="img-fluid"></p>
+</section>
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p><strong>Welcome to the quarto HARPER template!</strong></p>
+<p>You can fork and use this template to quick-start your projects.</p>
+</section>
+<section id="how-to-use-this-template" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-this-template">How to use this template</h2>
+<p>This template is useful for real-world evidence (RWE) studies performed using the R or Python programming language. By forking the template, users can kickstart their analysis by having a Quarto-based HARPER document template (and corresponding table shells) along with pre-configured <code>.yml</code> files for continuous deployment of a project-specfic website using GitLab.</p>
+<p>Step 1: Fork the repository and enter your project details (e.g.&nbsp;repository name, etc.)</p>
+<p>Step 2: Remove the fork relationship under <code>Settings &gt; General &gt; Advanced &gt; Remove fork relationship</code></p>
+<p>Step 3: Execute <code>renv::restore()</code> to install all required dependencies (R packages) in the project-specific renv R package library.</p>
+<p>Step 4: Enter/specify you project details in:</p>
+<ul>
+<li><p>README.md</p></li>
+<li><p>_quarto.yml</p></li>
+<li><p>.gitlab-ci.yml (<a href="https://docs.gitlab.com/ee/user/project/pages/getting_started/pages_forked_sample_project.html">adjust the CI to your system if needed</a>)</p></li>
+</ul>
+<p>Step 5: Customize as much as needed and conduct great research!</p>
+</section>
+<section id="repository-details" class="level2">
+<h2 class="anchored" data-anchor-id="repository-details">Repository details</h2>
+<p>This template is conceptualized for a typical RWE study with the following sub-directories/-files:</p>
+<ul>
+<li><p><code>README.md</code>: Short description and information about the project. Could include background, aims/objectives, IRB/privacy information and details on repdroducibility</p></li>
+<li><p><code>index.qmd</code>: Landing page of quarto website. Could include similar information as <code>README.md</code></p></li>
+<li><p><code>protocol</code>: HARPER quarto template (<code>protocol.qmd</code>) with empty table shells included in the protocol, template for study design figures and HARPER pdf template. It also contains a pre-configured <code>references.bib</code> BibTex file for citations/references one may want to include in the protocol.</p></li>
+<li><p><code>documentation</code>: Sub-directory for documentation materials, e.g.&nbsp;data dictionaries or IRB approval letters.</p></li>
+<li><p><code>scripts</code>: Sub-directory for R/Python analysis scripts. It is recommended to have a clear labeling such as: <em>1_data_query.qmd</em>, <em>2_descriptives.qmd</em>, <em>3_main_analysis</em>, <em>4_senstivity_analysis</em>, etc.</p></li>
+<li><p><code>functions</code>: Custom R/Python functions to be sourced in analysis scripts.</p></li>
+<li><p><code>results</code>: Sub-directory for collecting publication-ready tables, figures and other material relevant to communicate results.</p></li>
+<li><p><code>public</code>: output directory for all quarto scripts and resources published on the website. This is particularly useful to publish annotated and interactive outputs along with a peer-reviewed manuscript as a measure of enhanced transpareny and reproducibility and a way to augment and support study results. The name of the output directory can be customized in the <code>_quarto.yml</code> file according to specific system needs (for more details see the <a href="https://quarto.org/docs/projects/quarto-projects.html">quarto website</a>).</p></li>
+<li><p><code>manuscript</code>: Sub-directory where manuscript and supplementary material can be drafted and stored.</p></li>
+<li><p><code>renv</code>: Project-specific R package library. Fore more information, please visit the <a href="https://rstudio.github.io/renv/articles/renv.html">renv website</a>.</p></li>
+<li><p><code>.gitignore</code>: File to specify which files should not be tracked via git.</p></li>
+<li><p><code>.Rprofile</code>: Environment file for R projects to store things like paths or keys (you can also setup an <code>.Renviron</code>)</p></li>
+<li><p><code>_quarto.yml</code> and <code>.gitlab-ci.yml</code>: Global settings for Quarto and Gitlab CI/CD</p></li>
+</ul>
+<p>Of course you can customize and remove/add other files and directories. For example, one may also want to add bash files to orchestrate the execution of different scripts.</p>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<p>Wang SV, Pottegård A, Crown W, Arlett P, Ashcroft DM, Benchimol EI, Berger ML, Crane G, Goettsch W, Hua W, Kabadi S, Kern DM, Kurz X, Langan S, Nonaka T, Orsini L, Perez-Gutthann S, Pinheiro S, Pratt N, Schneeweiss S, Toussi M, Williams RJ. HARmonized Protocol Template to Enhance Reproducibility of hypothesis evaluating real-world evidence studies on treatment effects: A good practices report of a joint ISPE/ISPOR task force. Pharmacoepidemiol Drug Saf. 2023 Jan;32(1):44-55. doi: 10.1002/pds.5507. Epub 2022 Oct 10. PMID: 36215113; PMCID: PMC9771861.</p>
+<p>For more information, please visit: <a href="https://osf.io/6qxpf/" class="uri">https://osf.io/6qxpf/</a></p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

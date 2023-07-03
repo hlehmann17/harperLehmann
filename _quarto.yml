@@ -12,7 +12,7 @@ project:
     # index/landing page
     - index.qmd
     # protocol
-    - protocol/Quarto template/protocol.qmd
+    - protocol/Quarto_template/protocol.qmd
 
 website:
   title: "HARPER"
@@ -20,7 +20,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: protocol/protocol.qmd
+      - href: protocol/Quarto_template/protocol.qmd
         text: Protocol
 
 page-footer:

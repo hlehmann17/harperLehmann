@@ -84,7 +84,7 @@ This protocol is based on the *HARmonized Protocol Template to Enhance Reproduci
 
 <!-- 
 
-For a table template to populate, please see protocol/1_tbl_amendments.csv
+For a table template to populate, please see protocol/Quarto_template/1_tbl_amendments.csv
 
 Indicate amendments and updates to the study protocol in a table as indicated below. In the “reason” column, not whether the amendment occurred after protocol registration/finalization/approval.
 -->
@@ -95,7 +95,7 @@ Indicate amendments and updates to the study protocol in a table as indicated be
 #| message: false
 
 read_csv(
-  file = here("protocol/Quarto template", "0_tbl_amendments.csv"),
+  file = here("protocol/Quarto_template", "0_tbl_amendments.csv"),
   show_col_types = FALSE
   ) %>% 
   gt() %>% 
@@ -107,8 +107,8 @@ read_csv(
 
 Enter planned dates for study milestones.
 
-For a table template to populate, please see protocol/2_tbl_milestones.csv
-If used, set eva: false to eval: true
+For a table template to populate, please see protocol/Quarto_template/2_tbl_milestones.csv
+If used, set eval: false to eval: true
 
 Milestone: Brief description of the milestone or deliverable
 Date: Anticipated date of completion
@@ -119,7 +119,7 @@ Date: Anticipated date of completion
 #| tbl-cap: "Milestones"
 #| message: false
 read_csv(
-  file = here("protocol/Quarto template", "1_tbl_milestones.csv"),
+  file = here("protocol/Quarto_template", "1_tbl_milestones.csv"),
   show_col_types = FALSE
   ) %>% 
   gt() %>% 
@@ -155,14 +155,14 @@ Duplicate table sections A and B as necessary for co-primary objectives or multi
 #|   - "B.	Secondary research question and objective"
 #| layout-ncol: 1
 read_csv(
-  file = here("protocol/Quarto template", "2a_tbl_primary_objective.csv"),
+  file = here("protocol/Quarto_template", "2a_tbl_primary_objective.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
   gt_style()
 
 read_csv(
-  file = here("protocol/Quarto template", "2b_tbl_secondary_objective.csv"),
+  file = here("protocol/Quarto_template", "2b_tbl_secondary_objective.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -182,6 +182,7 @@ read_csv(
 
 Create a design diagram to describe time 0 and relevant study windows used in the study design. A recommended framework is outlined in Schneeweiss et al. Graphical Depiction of Longitudinal Study Designs in Health Care Databases. Ann Intern Med. 2019; 170:398–406. The diagram following this framework can be created using power point templates or other software program of choice (www.repeatinitiative.org/projects). It is intended to be read from top to bottom, reflecting the order of operations to create an analytic cohort from a source longitudinal healthcare database. Temporality of assessment windows are clearly shown relative to the study entry (“index”) date, which is considered time 0. Bracketed number ranges denote the inclusive time windows for washout, inclusion/exclusion, and covariate assessment windows as well as follow up. Whether or not time 0 is included in an assessment window can also be visually distinguished by whether it overlaps the vertical arrow representing the primary anchor.
 The diagram may include footnotes specifying the inclusion/exclusion criteria, covariates, and censoring criteria relevant to each assessment window. 
+
 Alternative design visualization approaches can be used as appropriate.
 
 There is also a great shiny app available under: https://presc.sdu.dk/repeat-diagrams/
@@ -232,7 +233,7 @@ TEXT -->
 #| tbl-cap: "Operational Definition of Time 0 (index date) and other primary time anchors."
 
 read_csv(
-  file = here("protocol/Quarto template", "3_tbl_entry.csv"),
+  file = here("protocol/Quarto_template", "3_tbl_entry.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -269,7 +270,7 @@ Assessment window: Use bracketed numbers representing time intervals anchored on
 #| tbl-cap: "Operational Definitions of Inclusion Criteria"
 
 read_csv(
-  file = here("protocol/Quarto template", "4_tbl_inclusion.csv"),
+  file = here("protocol/Quarto_template", "4_tbl_inclusion.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -311,7 +312,7 @@ Source of algorithm: Specify the source of algorithms to define the exclusion cr
 #| tbl-cap: "Operational Definitions of Exclusion Criteria"
 
 read_csv(
-  file = here("protocol/Quarto template", "5_tbl_exclusion.csv"),
+  file = here("protocol/Quarto_template", "5_tbl_exclusion.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -372,7 +373,7 @@ Source of algorithm: Specify the source of algorithms to define the exposure
 #| tbl-cap: "Operational Definitions of Exposure"
 
 read_csv(
-  file = here("protocol/Quarto template", "6_tbl_exposure.csv"),
+  file = here("protocol/Quarto_template", "6_tbl_exposure.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -424,7 +425,7 @@ Source of algorithm: Specify the source of algorithms to define the outcome.
 #| tbl-cap: "Operational Definitions of Outcome"
 
 read_csv(
-  file = here("protocol/Quarto template", "7_tbl_outcome.csv"),
+  file = here("protocol/Quarto_template", "7_tbl_outcome.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -454,7 +455,7 @@ Follow up end: Indicate 'Yes' or 'No' for each of the options. Specify additiona
 #| tbl-cap: "Operational Definitions of Follow up"
 
 read_csv(
-  file = here("protocol/Quarto template", "8_tbl_follow_up.csv"),
+  file = here("protocol/Quarto_template", "8_tbl_follow_up.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -491,7 +492,7 @@ Measurement characteristics/validation:If there are measurement characteristics 
 #| tbl-cap: "Operational Definitions of Covariates"
 
 read_csv(
-  file = here("protocol/Quarto template", "9_tbl_covariates.csv"),
+  file = here("protocol/Quarto_template", "9_tbl_covariates.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -541,14 +542,14 @@ Subgroup analysis: List subgroup analyses that will be conducted based on the pr
 #|   - "B.	Secondary analysis"
 #| layout-ncol: 1
 read_csv(
-  file = here("protocol/Quarto template", "10a_tbl_primary_analysis.csv"),
+  file = here("protocol/Quarto_template", "10a_tbl_primary_analysis.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
   gt_style()
 
 read_csv(
-  file = here("protocol/Quarto template", "10b_tbl_secondary_analysis.csv"),
+  file = here("protocol/Quarto_template", "10b_tbl_secondary_analysis.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -564,7 +565,7 @@ The table below is used to detail the sensitivity analyses, the rationale for co
 #| tbl-cap: "Sensitivity analyses – rationale, strengths and limitations"
 
 read_csv(
-  file = here("protocol/Quarto template", "11_tbl_sensitivity.csv"),
+  file = here("protocol/Quarto_template", "11_tbl_sensitivity.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -609,7 +610,7 @@ Software for data management: Name software that is used to manage or maintain t
 #| tbl-cap: "Metadata about data sources and software"
 #| out-width: 50%
 read_csv(
-  file = here("protocol/Quarto template", "12_tbl_data.csv"),
+  file = here("protocol/Quarto_template", "12_tbl_data.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -718,5 +719,5 @@ Detailed change log based on previous commits.
 git log --format='%aD
 Changes made by: %aE 
 Commit hash:  %h
-Changes made: %B' --follow -- protocol.qmd
+Changes made: %B' --follow -- protocol/Quarto_template/protocol.qmd
 ```

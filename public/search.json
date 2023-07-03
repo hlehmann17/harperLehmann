@@ -145,5 +145,103 @@
     "title": "Study protocol",
     "section": "13.3 Repositories",
     "text": "13.3 Repositories\n\n\n\nrepos:\n\n\n\n\n\n\nCRAN\n\n\n\n\nhttps://cran.rstudio.com"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#title",
+    "href": "protocol/Quarto template/protocol.html#title",
+    "title": "Study protocol",
+    "section": "Title",
+    "text": "Title"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#research-question-and-objectives",
+    "href": "protocol/Quarto template/protocol.html#research-question-and-objectives",
+    "title": "Study protocol",
+    "section": "Research question and objectives",
+    "text": "Research question and objectives"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#protocol-version",
+    "href": "protocol/Quarto template/protocol.html#protocol-version",
+    "title": "Study protocol",
+    "section": "Protocol version",
+    "text": "Protocol version"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#contributors",
+    "href": "protocol/Quarto template/protocol.html#contributors",
+    "title": "Study protocol",
+    "section": "Contributors",
+    "text": "Contributors\n\nPrimary investigator contact information: \nContributor names:"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#study-registration",
+    "href": "protocol/Quarto template/protocol.html#study-registration",
+    "title": "Study protocol",
+    "section": "Study registration",
+    "text": "Study registration\nSite: \nIdentifier:"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#sponsor",
+    "href": "protocol/Quarto template/protocol.html#sponsor",
+    "title": "Study protocol",
+    "section": "Sponsor",
+    "text": "Sponsor\nOrganization: \nContact:"
+  },
+  {
+    "objectID": "protocol/Quarto template/protocol.html#conflict-of-interest",
+    "href": "protocol/Quarto template/protocol.html#conflict-of-interest",
+    "title": "Study protocol",
+    "section": "Conflict of interest",
+    "text": "Conflict of interest"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#title",
+    "href": "protocol/Quarto_template/protocol.html#title",
+    "title": "Study protocol",
+    "section": "Title",
+    "text": "Title"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#research-question-and-objectives",
+    "href": "protocol/Quarto_template/protocol.html#research-question-and-objectives",
+    "title": "Study protocol",
+    "section": "Research question and objectives",
+    "text": "Research question and objectives"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#protocol-version",
+    "href": "protocol/Quarto_template/protocol.html#protocol-version",
+    "title": "Study protocol",
+    "section": "Protocol version",
+    "text": "Protocol version"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#contributors",
+    "href": "protocol/Quarto_template/protocol.html#contributors",
+    "title": "Study protocol",
+    "section": "Contributors",
+    "text": "Contributors\n\nPrimary investigator contact information: \nContributor names:"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#study-registration",
+    "href": "protocol/Quarto_template/protocol.html#study-registration",
+    "title": "Study protocol",
+    "section": "Study registration",
+    "text": "Study registration\nSite: \nIdentifier:"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#sponsor",
+    "href": "protocol/Quarto_template/protocol.html#sponsor",
+    "title": "Study protocol",
+    "section": "Sponsor",
+    "text": "Sponsor\nOrganization: \nContact:"
+  },
+  {
+    "objectID": "protocol/Quarto_template/protocol.html#conflict-of-interest",
+    "href": "protocol/Quarto_template/protocol.html#conflict-of-interest",
+    "title": "Study protocol",
+    "section": "Conflict of interest",
+    "text": "Conflict of interest"
   }
 ]

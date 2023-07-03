@@ -1,7 +1,7 @@
 # These files won't be synced
 /.quarto/
 
-# History files
+# History and session files
 .Rhistory
 .Rapp.history
 .DS_Store

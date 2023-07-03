@@ -1,10 +1,10 @@
-# This file is a template, and might need editing before it works on your project.
-# To contribute improvements to CI/CD templates, please follow the Development guide at:
-# https://docs.gitlab.com/ee/development/cicd/templates.html
-# This specific template is located at:
-# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Pages/HTML.gitlab-ci.yml
+# This file is a template for continuous inetgration and deployment (CI/CD) using GitLab. 
+# The template will likely need editing before it works on your project.
+# To configure custom runners, modify the "- pages" runner example name in this template.
+# In this example CI/CD yml file, the runner would be used to continuously deploy
+# files stored in the "public" sub-directory. 
+# See also "_quarto.yml"
 
-# Full project: https://gitlab.com/pages/plain-html
 image: busybox
 
 default:

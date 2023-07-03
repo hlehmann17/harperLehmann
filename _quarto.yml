@@ -1,10 +1,18 @@
+# This is a "_quarto.yml" file template.
+# What does this template do?
+# - The "project"" section specifies that the intended output of the specified quarto files should be 
+# rendered to .html files, the output stored in the "public" sub-directory and compiled to a Quarto website.
+# In combination with the ".gitlab-ci.yml" file, this can be used for continuous integration
+# and deployment (CI/CD) of the study protocol and other scripts if desired.
+
 project:
   type: website
   output-dir: public
   render:
+    # index/landing page
     - index.qmd
     # protocol
-    - protocol/protocol.qmd
+    - protocol/Quarto template/protocol.qmd
 
 website:
   title: "HARPER"
@@ -32,23 +40,6 @@ format:
     page-layout: full
     link-external-icon: true
     link-external-newwindow: true
-    colorlinks: true
-    engine: knitr
-    fig-cap-location: top
-    tbl-cap-location: top
-    crossref:
-      fig-title: Figure
-      tbl-title: Table
-      title-delim: ":"
-      fig-prefix: Figure
-      tbl-prefix: Table
-      ref-hyperlink: true
-      
-  pdf:
-    #documentclass: report
-    papersize: letter
-    classoption: landscape
-    toc: true
     colorlinks: true
     engine: knitr
     fig-cap-location: top

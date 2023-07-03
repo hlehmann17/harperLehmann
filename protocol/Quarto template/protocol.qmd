@@ -4,17 +4,17 @@ subtitle: "Based on the HARPER template"
 date: "`r Sys.Date()`"
 date-format: long
 author:
-  - name: Janick Weberpals, RPh, PhD
+  - name: FIRST, LAST
     corresponding: true
-    orcid: 0000-0003-0404-7394
-    email: jweberpals@bwh.harvard.edu
-    url: janickweberpals.github.io
+    orcid: 0000-0000-000
+    email: test@web.de
+    url: ULR.com
     affiliations:
-      - name: Division of Pharmacoepidemiology and Pharmacoeconomics <br> Brigham and Women's Hospital <br> Harvard Medical School
-        address: 1620 Tremont Street
-        city: Boston
-        state: MA
-        postal-code: 02120
+      - name: FIRST, LAST
+        address: ADDRESS
+        city: CITY
+        state: STATE
+        postal-code: 00000
 echo: false
 number-sections: true
 bibliography: references.bib
@@ -95,7 +95,7 @@ Indicate amendments and updates to the study protocol in a table as indicated be
 #| message: false
 
 read_csv(
-  file = here("protocol", "0_tbl_amendments.csv"),
+  file = here("protocol/Quarto template", "0_tbl_amendments.csv"),
   show_col_types = FALSE
   ) %>% 
   gt() %>% 
@@ -119,7 +119,7 @@ Date: Anticipated date of completion
 #| tbl-cap: "Milestones"
 #| message: false
 read_csv(
-  file = here("protocol", "1_tbl_milestones.csv"),
+  file = here("protocol/Quarto template", "1_tbl_milestones.csv"),
   show_col_types = FALSE
   ) %>% 
   gt() %>% 
@@ -155,14 +155,14 @@ Duplicate table sections A and B as necessary for co-primary objectives or multi
 #|   - "B.	Secondary research question and objective"
 #| layout-ncol: 1
 read_csv(
-  file = here("protocol", "2a_tbl_primary_objective.csv"),
+  file = here("protocol/Quarto template", "2a_tbl_primary_objective.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
   gt_style()
 
 read_csv(
-  file = here("protocol", "2b_tbl_secondary_objective.csv"),
+  file = here("protocol/Quarto template", "2b_tbl_secondary_objective.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -232,7 +232,7 @@ TEXT -->
 #| tbl-cap: "Operational Definition of Time 0 (index date) and other primary time anchors."
 
 read_csv(
-  file = here("protocol", "3_tbl_entry.csv"),
+  file = here("protocol/Quarto template", "3_tbl_entry.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -269,7 +269,7 @@ Assessment window: Use bracketed numbers representing time intervals anchored on
 #| tbl-cap: "Operational Definitions of Inclusion Criteria"
 
 read_csv(
-  file = here("protocol", "4_tbl_inclusion.csv"),
+  file = here("protocol/Quarto template", "4_tbl_inclusion.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -311,7 +311,7 @@ Source of algorithm: Specify the source of algorithms to define the exclusion cr
 #| tbl-cap: "Operational Definitions of Exclusion Criteria"
 
 read_csv(
-  file = here("protocol", "5_tbl_exclusion.csv"),
+  file = here("protocol/Quarto template", "5_tbl_exclusion.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -372,7 +372,7 @@ Source of algorithm: Specify the source of algorithms to define the exposure
 #| tbl-cap: "Operational Definitions of Exposure"
 
 read_csv(
-  file = here("protocol", "6_tbl_exposure.csv"),
+  file = here("protocol/Quarto template", "6_tbl_exposure.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -424,7 +424,7 @@ Source of algorithm: Specify the source of algorithms to define the outcome.
 #| tbl-cap: "Operational Definitions of Outcome"
 
 read_csv(
-  file = here("protocol", "7_tbl_outcome.csv"),
+  file = here("protocol/Quarto template", "7_tbl_outcome.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -454,7 +454,7 @@ Follow up end: Indicate 'Yes' or 'No' for each of the options. Specify additiona
 #| tbl-cap: "Operational Definitions of Follow up"
 
 read_csv(
-  file = here("protocol", "8_tbl_follow_up.csv"),
+  file = here("protocol/Quarto template", "8_tbl_follow_up.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -491,7 +491,7 @@ Measurement characteristics/validation:If there are measurement characteristics 
 #| tbl-cap: "Operational Definitions of Covariates"
 
 read_csv(
-  file = here("protocol", "9_tbl_covariates.csv"),
+  file = here("protocol/Quarto template", "9_tbl_covariates.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -541,14 +541,14 @@ Subgroup analysis: List subgroup analyses that will be conducted based on the pr
 #|   - "B.	Secondary analysis"
 #| layout-ncol: 1
 read_csv(
-  file = here("protocol", "10a_tbl_primary_analysis.csv"),
+  file = here("protocol/Quarto template", "10a_tbl_primary_analysis.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
   gt_style()
 
 read_csv(
-  file = here("protocol", "10b_tbl_secondary_analysis.csv"),
+  file = here("protocol/Quarto template", "10b_tbl_secondary_analysis.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -564,7 +564,7 @@ The table below is used to detail the sensitivity analyses, the rationale for co
 #| tbl-cap: "Sensitivity analyses – rationale, strengths and limitations"
 
 read_csv(
-  file = here("protocol", "11_tbl_sensitivity.csv"),
+  file = here("protocol/Quarto template", "11_tbl_sensitivity.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 
@@ -609,7 +609,7 @@ Software for data management: Name software that is used to manage or maintain t
 #| tbl-cap: "Metadata about data sources and software"
 #| out-width: 50%
 read_csv(
-  file = here("protocol", "12_tbl_data.csv"),
+  file = here("protocol/Quarto template", "12_tbl_data.csv"),
   show_col_types = FALSE
   ) %>%
   gt() %>% 

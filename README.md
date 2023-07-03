@@ -42,13 +42,13 @@ This template is conceptualized for a typical RWE study with the following sub-d
 
 * `documentation`: Sub-directory for documentation materials, e.g. data dictionaries or IRB approval letters.
 
-* `scripts`: Sub-directory for R/Python analysis scripts. It is recommended to have a clear labeling such as: *1_data_query.qmd*, *2_descriptives.qmd*, *3_main_analysis*, *4_senstivity_analysis*, etc.
+* `scripts`: Sub-directory for R/Python analysis scripts. It is recommended to have a clear labeling such as: *1_data_query.qmd*, *2_descriptives.qmd*, *3_main_analysis.qmd*, *4_senstivity_analysis.qmd*, etc.
 
 * `functions`: Custom R/Python functions to be sourced in analysis scripts.
 
 * `results`: Sub-directory for collecting publication-ready tables, figures and other material relevant to communicate results.
 
-* `public`: output directory for all quarto scripts and resources published on the website. This is particularly useful to publish annotated and interactive outputs along with a peer-reviewed manuscript as a measure of enhanced transpareny and reproducibility and a way to augment and support study results. The name of the output directory can be customized in the `_quarto.yml` file according to specific system needs (for more details see the [quarto website](https://quarto.org/docs/projects/quarto-projects.html)).
+* `public`: output directory for all quarto scripts and resources published on the website. This is particularly useful to publish annotated and interactive outputs along with a peer-reviewed manuscript as a measure of enhanced transparency and reproducibility and a way to augment and support study results. The name of the output directory can be customized in the `_quarto.yml` file according to specific system needs (for more details see the [quarto website](https://quarto.org/docs/projects/quarto-projects.html)).
 
 * `manuscript`: Sub-directory where manuscript and supplementary material can be drafted and stored.
 
@@ -58,7 +58,7 @@ This template is conceptualized for a typical RWE study with the following sub-d
 
 * `.Rprofile`: Environment file for R projects to store things like paths or keys (you can also setup an `.Renviron`)
 
-* `_quarto.yml` and `.gitlab-ci.yml`: Global settings for Quarto and Gitlab CI/CD
+* `_quarto.yml` and `.gitlab-ci.yml`: Pre-configured templates to define settings for Quarto files and outputs (in this template all output .html files are automatically saved to the "public" sub-directory). The `.gitlab-ci.yml` defines the GitLab continuous integration and deployment (CI/CD). This file may need to be adjusted to your specific project and installed GitLab runner(s).
 
 Of course you can customize and remove/add other files and directories. For example, one may also want to add bash files to orchestrate the execution of different scripts.
 
@@ -72,3 +72,9 @@ For more information, please visit:
 # Version
 
 `HARPER-based quarto template for GitLab version 0.0.1`
+
+# Template changelog
+
+## Version 0.0.1
+
+* initial template

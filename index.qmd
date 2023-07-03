@@ -2,13 +2,11 @@
 title: "STUDY TITLE"
 subtitle: "Based on the HARPER template"
 date: "`r Sys.Date()`"
-bibliography: references.bib
-csl: pharmacoepidemiology-and-drug-safety.csl
 ---
 
 # HARPER-based GitLab study repository
 
-This is a **GitLab/quarto-based template for real-world evidence (RWE) studies** based on the `HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force` (HARPER) protocol.[@Wang2022; @Wang2023;@Schneeweiss2019;@lund2021]
+This is a **GitLab/quarto-based template for real-world evidence (RWE) studies** based on the `HARmonized Protocol Template to Enhance Reproducibility (HARPER) of Hypothesis Evaluating Real-World Evidence Studies on Treatment Effects: A Good Practices Report of a Joint ISPE/ISPOR Task Force` (HARPER) protocol.
 
 ![](protocol/images/harper_logo.png)
 
@@ -25,3 +23,7 @@ For more information about the HARPER protocol, please visit: <https://osf.io/6q
 This repository is based on **version 0.0.1**.
 
 # References
+
+Wang SV, Pottegård A, Crown W, Arlett P, Ashcroft DM, Benchimol EI, Berger ML, Crane G, Goettsch W, Hua W, Kabadi S, Kern DM, Kurz X, Langan S, Nonaka T, Orsini L, Perez-Gutthann S, Pinheiro S, Pratt N, Schneeweiss S, Toussi M, Williams RJ. HARmonized Protocol Template to Enhance Reproducibility of hypothesis evaluating real-world evidence studies on treatment effects: A good practices report of a joint ISPE/ISPOR task force. Pharmacoepidemiol Drug Saf. 2023 Jan;32(1):44-55. doi: 10.1002/pds.5507. Epub 2022 Oct 10. PMID: 36215113; PMCID: PMC9771861.
+
+Schneeweiss S, Rassen JA, Brown JS, Rothman KJ, Happe L, Arlett P, Dal Pan G, Goettsch W, Murk W, Wang SV. Graphical Depiction of Longitudinal Study Designs in Health Care Databases. Ann Intern Med. 2019 Mar 19;170(6):398-406. doi: 10.7326/M18-3079. Epub 2019 Mar 12. PMID: 30856654.

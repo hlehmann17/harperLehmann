@@ -27,9 +27,7 @@ page-footer:
     left: |
       HARPER protocol template for <STUDY TITLE>
 
-  
 format:
-
   html:
     theme: cosmo
     css: styles.css

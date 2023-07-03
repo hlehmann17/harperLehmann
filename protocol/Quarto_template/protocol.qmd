@@ -6,11 +6,11 @@ date-format: long
 author:
   - name: FIRST, LAST
     corresponding: true
-    orcid: 0000-0000-000
+    orcid: 0000-0000-0000-0000
     email: test@web.de
     url: ULR.com
     affiliations:
-      - name: FIRST, LAST
+      - name: AFFILIATION NAME
         address: ADDRESS
         city: CITY
         state: STATE
@@ -144,15 +144,14 @@ The purpose of this protocol is to describe the emulation of trial INSERT TRIAL 
 The primary objective(s) defines the main aim of the study whereas the hypothesis refers to the main question being tested. This is usually what the study will be powered to detect. Secondary objectives are ancillary questions that may provide more information about the effects of treatment. Exposure refers to the therapeutic of interest whereas the comparator refers to an alternative option. The outcome refers to the clinical or other condition for which you are interested in understanding the effect of exposure. Time refers to when follow up begins and ends. Setting refers to the care settings that are relevant for the study (e.g. inpatient, ambulatory, emergency department). The main measure of effect refers to how you will estimate the effect of the exposure compared to the comparator on the outcome (e.g. hazard ratio, risk ratio, risk difference). 
 
 Duplicate table sections A and B as necessary for co-primary objectives or multiple secondary objectives.
-
 -->
 
 ```{r}
 #| label: tbl-objectives
 #| tbl-cap: "Research questions and objectives"
 #| tbl-subcap: 
-#|   - "A.	Primary research question and objective"
-#|   - "B.	Secondary research question and objective"
+#|   - "A. Primary research question and objective"
+#|   - "B. Secondary research question and objective"
 #| layout-ncol: 1
 read_csv(
   file = here("protocol/Quarto_template", "2a_tbl_primary_objective.csv"),
@@ -285,7 +284,7 @@ The table below requests the following operational details:
 
 Criterion: A brief text entry naming the exclusion criterion (e.g. age, sex, atrial fibrillation)
 
-Details: An optional brief text description to provide more information about the exclusion criterion (e.g. age in years defined by (time 0 - year of birth)/365, baseline enrolment measured by Part A, B, D and no HMO insurance coverage with 30 day gaps allowed), 2 codes required
+Details: An optional brief text description to provide more information about the exclusion criterion (e.g. age in years defined by (time 0 - year of birth)/365, baseline enrollment measured by Part A, B, D and no HMO insurance coverage with 30 day gaps allowed), 2 codes required
 
 Order of application: Specify whether the exclusion criterion is applied before or after selection of the study entry date. For example, enter
 "before" if you plan to apply the criterion, identify all possible study entry dates, and then choose one or more. Enter "after" if you select the first possible study entry date and then apply the exclusion criterion. If the patient does not meet the criterion, then the patient drops out. These decisions can impact which samples of person-time are included in the study.
@@ -538,8 +537,8 @@ Subgroup analysis: List subgroup analyses that will be conducted based on the pr
 #| label: tbl-analysis
 #| tbl-cap: "Primary, secondary, and subgroup analysis specification"
 #| tbl-subcap: 
-#|   - "A.	Primary analysis"
-#|   - "B.	Secondary analysis"
+#|   - "A. Primary analysis"
+#|   - "B. Secondary analysis"
 #| layout-ncol: 1
 read_csv(
   file = here("protocol/Quarto_template", "10a_tbl_primary_analysis.csv"),
@@ -719,5 +718,5 @@ Detailed change log based on previous commits.
 git log --format='%aD
 Changes made by: %aE 
 Commit hash:  %h
-Changes made: %B' --follow -- protocol/Quarto_template/protocol.qmd
+Changes made: %B' --follow -- protocol.qmd
 ```
